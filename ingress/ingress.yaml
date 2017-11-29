@@ -4,6 +4,9 @@ metadata:
   name: my-ingress
   namespace: default
 spec:
+  backend:
+    serviceName: nginx
+    servicePort: 80
   rules:
   - host:
     http:
